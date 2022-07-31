@@ -39,17 +39,6 @@ String sheetTemp = "";
 String NewOrder = "";
 
 #define LIST_SIZE 1
-/*uint8_t friendmac[LIST_SIZE][ESPPL_MAC_LEN] = {
-  {0x74, 0xc1, 0x4f, 0xf2, 0xd2, 0xe1}
-  //,{0x8c, 0x8e, 0xf2, 0x7c, 0xab, 0xa5}
-  };
-String friendname[LIST_SIZE] = {
-   "Rayhan"
-  //,"Target 2"
-  };
-    */
-//const char* ssid = "Eastern win 3";
-//const char* password = "";
 
 const char* host = "script.google.com";
 const int httpsPort = 443;
