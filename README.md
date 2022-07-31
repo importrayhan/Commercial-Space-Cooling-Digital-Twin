@@ -1,0 +1,2 @@
+# Commercial-Space-Cooling-Digital-Twin
+With the nodemcu IoT device, both indoor and outdoor weather data will be collected in the cloud at predetermined intervals. Later, AI pipelines will consume the time-series in order to produce optimum A/C operational control choices based on pattern discovery. nodemcu will simply need a 5V 2A ac adapter to function. The energy usage of the deep sleep mode is insignificant when room is out of use.
