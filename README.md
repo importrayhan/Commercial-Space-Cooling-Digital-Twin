@@ -1,13 +1,19 @@
 # Commercial-Space-Cooling-Digital-Twin
 With the nodemcu IoT device, both indoor and outdoor weather data will be collected in the cloud at predetermined intervals. Later, AI pipelines will consume the time-series in order to produce optimum A/C operational control choices based on pattern discovery. nodemcu will simply need a 5V 2A ac adapter to function. The energy usage of the deep sleep mode is insignificant when room is out of use.
 
+# Concept
+
+#### ESP8266 can connect with internet via ESP8266WIFI library. A/C remote sends unique IR signal to the IR receiver of A/C. So, the communication is based on IR signal. Different brand's A/C uses unique sequence of bits for each control signal. The IRremoteESP8266 module contains almost all protocols of the existing A/C. The HTTPSRedirect module can work with REST API. 
+#### There are of course many options to choose from as a database. In this project I utilized my Gsuite account and used the Google Sheet as a data storage. The Google Script provided more automation scopes which would have otherwise costed me more on other platforms. Using precise Lat, Long values, the OpenWeather's javascript library could provide accurate weather information of the outdoor environment. 
+
+### Basically, Arduino Libraries and Javascript knowledge is pre-requisite to work with this project.
+
 # SetUp Steps
 #### 1. Connect the ESP8266 with Computer 
 #### 2. Compile and Upload the .ino code to ESP8266 or Nodemcu
 #### 3. Give a Star to this repo while the code is uploading
 #### 3. Once your device is ready, keep the device with the IR LED facing the A/C 
-#### 4. Create a google sheet and open App Script (You don't need to follow the exact cell names. You can change the code once you know the logic.
-)
+#### 4. Create a google sheet and open App Script (You don't need to follow the exact cell names. You can change the code once you know the logic.)
 #### 5. Compile .gs code to the App Script Editor
 #### 6. If you are having a good day then you don't need to start debugging
 
